@@ -1,6 +1,9 @@
 name: Events Demo 1
 on:
-  push
+  push:
+    branches:
+      - main
+      - 'feat/**'
 jobs:
   deploy:
     runs-on: ubuntu-latest

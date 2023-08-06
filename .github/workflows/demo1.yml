@@ -1,9 +1,17 @@
 name: Events Demo 1
 on:
+  pull_request:
+    types:
+      - opened
+      - 'feat-**'
   push:
     branches:
       - main
       - 'feat/**'
+    paths-ignore:
+      - 'tests/*'
+      - 'readme.txt'
+      
 jobs:
   deploy:
     runs-on: ubuntu-latest

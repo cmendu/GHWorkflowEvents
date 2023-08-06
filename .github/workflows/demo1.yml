@@ -3,7 +3,7 @@ on:
   pull_request:
     types:
       - opened
-      - 'feat-**'
+      - 'feat/**'
   push:
     branches:
       - main
